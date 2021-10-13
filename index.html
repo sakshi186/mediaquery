@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>media query in css</title>
+          <style>
+            .box1{
+              width:50px;
+              height:50px;
+              background:yellow;
+            }
+            .box2{
+              width:50px;
+              height:50px;
+              background:greenyellow;
+            }
+            .box3{
+              width:50px;
+              height:50px;
+              background:pink;
+            }
+            .box4{
+              width:50px;
+              height:50px;
+              background:blue;
+            }
+            .box5{
+              width:50px;
+              height:50px;
+              background:blueviolet;
+            }
+            .box6{
+              width:50px;
+              height:50px;
+              background:cadetblue;
+            }
+            .box7{
+              width:50px;
+              height:50px;
+              background:navy;
+            }
+            .box8{
+              width:50px;
+              height:50px;
+              background:lightsalmon;
+            }
+            .box9{
+              width:50px;
+              height:50px;
+              background:darkred;
+            }
+            .box10{
+              width:50px;
+              height:50px;
+              background:orchid;
+            }
+             @media only screen and (max-width:300px)  {
+               .box1{
+                 width:100px;
+                 height:100px;
+               }
+               .box3{
+                 display:none;
+               }
+             }
+             @media only screen and (min-width:301px){
+              .box1,.box2,.box3,.box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10{
+                       border-radius:50px;
+             }
+          }
+          @media only screen and (min-width:600px){
+            .box1{
+                  background:green;
+            }
+            .box3{
+              background:red;
+            }
+            .box5{
+              background:orange;
+            }
+            .box7{
+              background:mediumorchid;
+            }
+            .box9{
+              background:mediumturquoise;
+            }
+          }
+           @media only screen and (min-width:800px){
+             .box2,.box4,.box6,.box8,.box10{
+               display:none;
+             }
+            }
+             @media only screen and (min-width:1000px){
+              .box1,.box2,.box3,.box3,.box4,.box5,.box6,.box7,.box8,.box9,.box10{
+                display:none;
+             }
+
+           }
+
+
+          </style>
+    </head>
+    <body>
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+        <div class="box5"></div>
+        <div class="box6"></div>
+        <div class="box7"></div>
+        <div class="box8"></div>
+        <div class="box9"></div>
+        <div class="box10"></div>
+     </body>
+    </html>
